@@ -7,7 +7,7 @@ while (nombre == "") {
         break;
     }
 }
-/* alert(`Hola ${nombre}`); */
+
 
 let apellido = prompt("Ahora ingrese su apellido");
 
@@ -18,7 +18,7 @@ while (apellido == "") {
         break;
     }
 }
-/* alert(`Hola ${nombre} ${apellido}`); */
+
 
 let menu = prompt(`Hola ${nombre} ${apellido}` + "\ningrese la opcion que desee para continuar" + "\nPara cambiar su nombre ingrese: 1" + "\nPara cambiar su apellido ingrese: 2" + "\nPara entrar a la pagina con su nombre y apellido actuales no ingrese nada")
 while (menu != "") {
@@ -51,13 +51,6 @@ while (menu != "") {
     break;
 }
 
-
-/* if (nombre == "") {
-    alert("por favor ingrese un nombre valido.")
-}
-else {
-   alert("Hola " + nombre) 
-} */
 
 
 
