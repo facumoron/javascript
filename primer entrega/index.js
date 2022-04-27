@@ -76,26 +76,26 @@ if (peso >= 2, peso <= 5) {
 }
 
 
-let menu = prompt("Escriba el numero de producto que quiere comprar")
+let menu = prompt("Escriba el numero de producto que quiere comprar");
 while (menu != "") {
     switch (menu) {
         case 1:
-            alert("el producto cuesta 300 pesos")
+            alert("el producto cuesta 300 pesos");
             break;
         case 2:
-            alert("el producto cuesta 500 pesos")
+            alert("el producto cuesta 500 pesos");
             break;
         case 3:
-            alert("el producto cuesta 600 pesos")
+            alert("el producto cuesta 600 pesos");
             break;
         case 4:
-            alert("el producto cuesta 700 pesos")
+            alert("el producto cuesta 700 pesos");
             break;
         case 5:
-            alert("el producto cuesta 900 pesos")
+            alert("el producto cuesta 900 pesos");
             break;
         case 6:
-            alert("el producto cuesta 1200 pesos")
+            alert("el producto cuesta 1200 pesos");
             break;
 
         default:
