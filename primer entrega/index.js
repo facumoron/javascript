@@ -1,49 +1,49 @@
-let nombre = prompt("Ingrese su nombre");
-while (nombre == "") {
-    if (nombre == "") {
-        nombre = prompt("Porfavor ingrese un nombre valido");
-    }else if (nombre != "") {
-        alert("Hola " + nombre)
+let usuario = prompt("Ingrese su usuario");
+while (usuario == "") {
+    if (usuario == "") {
+        usuario = prompt("Porfavor ingrese un usuario valido");
+    }else if (usuario != "") {
+        alert("Hola " + usuario)
         break;
     }
 }
 
 
-let apellido = prompt("Ahora ingrese su apellido");
+let contrasenia = prompt("Ahora ingrese su contrasenia");
 
-while (apellido == "") {
-    if (apellido == "") {
-        apellido = prompt("Porfavor ingrese un apellido valido");
-    }else if (apellido != "") {
+while (contrasenia == "") {
+    if (contrasenia == "") {
+        contrasenia = prompt("Porfavor ingrese una contrasenia valida");
+    }else if (contrasenia != "") {
         break;
     }
 }
 
 
-let menu = prompt(`Hola ${nombre} ${apellido}` + "\ningrese la opcion que desee para continuar" + "\nPara cambiar su nombre ingrese: 1" + "\nPara cambiar su apellido ingrese: 2" + "\nPara entrar a la pagina con su nombre y apellido actuales no ingrese nada")
-while (menu != "") {
-    switch (menu) {
+let login = prompt(`Hola ${usuario}` + "\ningrese la opcion que desee para continuar" + "\nPara cambiar su usuario ingrese: 1" + "\nPara cambiar su contrasenia ingrese: 2" + "\nPara entrar a la pagina con su usuario y contrasenia actuales solo presione aceptar ")
+while (login != "") {
+    switch (login) {
         case "1":
-            let nuevoNombre = prompt("Ingrese su nuevo nombre");
-            while (nuevoNombre == "") {
-                if (nuevoNombre == "") {
-                    nuevoNombre = prompt("Porfavor ingrese un nombre valido");
-                }else if (nuevoNombre != "") {
+            let nuevoUsuario = prompt("Ingrese su nuevo usuario");
+            while (nuevoUsuario == "") {
+                if (nuevoUsuario == "") {
+                    nuevoUsuario = prompt("Porfavor ingrese un usuario valido");
+                }else if (nuevoUsuario != "") {
                     break;
                 }
-            }
-            alert(`Su nombre fue cambiado exitosamente a ${nuevoNombre}`);
+            }ña
+            alert(`Su usuario fue cambiado exitosamente a ${nuevoUsuario}`);
             break;
         case "2":
-            let nuevoApellido = prompt("Ingrese su nuevo apellido");
-            while (nuevoApellido == "") {
-                if (nuevoApellido == "") {
-                    nuevoApellido = prompt("Porfavor ingrese un apellido valido");
-                }else if (nuevoApellido != "") {
+            let nuevaContrasenia = prompt("Ingrese su nuevo contrasenia");
+            while (nuevaContrasenia == "") {
+                if (nuevaContrasenia == "") {
+                    nuevaContrasenia = prompt("Porfavor ingrese un contrasenia valido");
+                }else if (nuevaContrasenia != "") {
                     break;
                 }
             }
-            alert(`Su apellido fue cambiado exitosamente a ${nuevoApellido}`);
+            alert(`Su contrasenia fue cambiado exitosamente a ${nuevaContrasenia}`);
             break;
         default:
             break;
@@ -51,9 +51,31 @@ while (menu != "") {
     break;
 }
 
+const producto1 = `Pipeta para 2 a 5 kilos`;
+const producto2 = `Pipeta para 6 a 10 kilos`;
+const producto3 = `Pipeta para 11 a 20 kilos`;
+const producto4 = `Pipeta para 21 a 30 kilos`;
+const producto5 = `Pipeta para 31 a 40 kilos`;
+const producto6 = `Pipeta para 41 a 60 kilos`;
 
 
 
+let peso = prompt("Por favor escriba cuanto pesa su mascota en kilos para que el sistema calcule que tipo de pipeta necesita");
+if (peso >= 2, peso <= 5) {
+    alert("usted tendria que comprar el producto 1");
+} else if (peso >= 6, peso <=10) {
+    alert("usted tendria que comprar el producto 2");  
+} else if (peso >= 11, peso <=20) {
+    alert("usted tendria que comprar el producto 3");  
+} else if (peso >= 21, peso <=30) {
+    alert("usted tendria que comprar el producto 4");  
+} else if (peso >= 31, peso <=40) {
+    alert("usted tendria que comprar el producto 5");  
+} else if (peso >= 41, peso <=60) {
+    alert("usted tendria que comprar el producto 6");  
+}
+
+let menu = prompt("Escriba el numero de producto que quiere comprar")
 
 
 
