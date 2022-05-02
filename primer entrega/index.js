@@ -68,7 +68,7 @@ if (peso >= 2, peso <= 5) {
 }
 
 
-let menu = prompt("Escriba el numero de producto que quiere comprar");
+let menu = parseInt(prompt("Escriba el numero de producto que quiere comprar"));
 while (menu != "") {
     switch (menu) {
         case 1:
@@ -94,6 +94,33 @@ while (menu != "") {
             break;
 
     }
+    break
 }
 
 
+const productoPipetas = [
+    { id: 0, pipeta: "Perros y gatos de 2 a 5 kilos", precio: 300 },
+    { id: 1, pipeta: "Perros y gatos de 6 a 10 kilos", precio: 300 },
+    { id: 2, pipeta: "Perros y gatos de 11 a 20 kilos", precio: 300 },
+    { id: 3, pipeta: "Perros y gatos de 21 a 30 kilos", precio: 300 },
+    { id: 4, pipeta: "Perros y gatos de 31 a 40 kilos", precio: 300 },
+    { id: 5, pipeta: "Perros y gatos de 41 a 60 kilos", precio: 300 }];
+
+
+class Pipetas {
+    constructor(id, pipeta, precio) {
+        this.id = id;
+        this.pipeta = pipeta;
+        this.precio = precio;
+    }
+}
+
+const pipetasNuevas = new Pipetas(6, prompt("describa la pipeta a agregar"), prompt("escriba de forma numerica el precio de la pipeta"));
+
+productoPipetas.push(pipetasNuevas);
+
+for (const pipe of productoPipetas) {
+    console.log(pipe.id);
+    console.log(pipe.pipeta);
+    console.log(pipe.precio);
+}
