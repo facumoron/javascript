@@ -51,14 +51,6 @@ while (login != "") {
     break;
 }
 
-const producto1 = `Pipeta para 2 a 5 kilos`;
-const producto2 = `Pipeta para 6 a 10 kilos`;
-const producto3 = `Pipeta para 11 a 20 kilos`;
-const producto4 = `Pipeta para 21 a 30 kilos`;
-const producto5 = `Pipeta para 31 a 40 kilos`;
-const producto6 = `Pipeta para 41 a 60 kilos`;
-
-
 
 let peso = prompt("Por favor escriba cuanto pesa su mascota en kilos para que el sistema calcule que tipo de pipeta necesita");
 if (peso >= 2, peso <= 5) {
