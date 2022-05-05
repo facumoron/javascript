@@ -68,7 +68,23 @@ if (peso >= 2, peso <= 5) {
 }
 
 
-let menu = parseInt(prompt("Escriba el numero de producto que quiere comprar"));
+let menu = parseInt(prompt("Desea recibir mas informacion sobre nuestras pipetas y su forma de uso? /n responder si o no"));
+while (menu != "") {
+    switch (menu) {
+        case "si":
+            alert("Las pipetas son tanto para perros como para gatos y estan dividas por el peso de cada animal, para que asi no sea peligroso para ellos, se colocan en el cuello para que no puedan lamer el liquido");
+            break;
+        case "no":
+            alert("el producto cuesta 500 pesos");
+            break;
+
+        default:
+            break;
+
+    }
+    break
+}
+/* let menu = parseInt(prompt("Escriba el numero de producto que quiere comprar"));
 while (menu != "") {
     switch (menu) {
         case 1:
@@ -95,7 +111,7 @@ while (menu != "") {
 
     }
     break
-}
+} */
 
 
 const productoPipetas = [
